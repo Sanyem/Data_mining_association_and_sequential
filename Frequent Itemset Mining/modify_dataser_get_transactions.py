@@ -19,7 +19,9 @@ for line in f1.readlines():
     map_set.add(tuple([line_arr[1],line_arr[2]]))
     print(line)
 writer = csv.writer(f2, delimiter=',')
-#print(transactions[1])
+# print(transactions[1])
+for j in transactions:
+    j = j.sort()
 for j in transactions:
     writer.writerow(j)
 w = csv.writer(f3,delimiter=',')
